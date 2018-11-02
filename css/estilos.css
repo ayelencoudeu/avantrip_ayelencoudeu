@@ -1,0 +1,108 @@
+*{
+	margin:0;
+	padding: 0;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	-o-box-sizing:border-box;
+}
+body{
+	font-family:'Roboto', Arial, Serif;
+	font-size: 1em;
+}
+
+.container-fluid{
+	padding-right: 0; 
+    padding-left: 0; 
+    margin-right: 0;
+    margin-left:0; 
+}
+
+.container{
+	max-width: 1440px;
+  margin-right: auto;
+  margin-left:auto;  
+}
+
+h1{
+	font-size: 1.5em;
+	font-weight: 300;
+}
+h1 strong{
+	font-weight: 700;
+}
+
+section .destacados{
+	border:solid red 1px;
+}
+
+section .destinos_destacados{
+	border:solid red 1px;
+}
+
+.estadia{
+	height: 170px;
+}
+
+.estadia .estadia_desde .estadia_desde_caja{
+	background-color: white;
+	height: 100px;
+	border-radius: 3px;	
+}
+
+.estadia .estadia_desde .estadia_desde_caja:hover{
+	background-color: blue;
+	cursor:pointer;
+}
+
+.escala .descripcion{ 
+	font-size: 1em;
+}
+
+
+@media only screen and (max-width: 1024px){
+	.container{max-width: 1024px;}
+	.estadia{
+	height: 140px;
+	}
+	.estadia .estadia_desde .estadia_desde_caja{
+		height: 60px;
+	}
+	.estadia .estadia_desde .estadia_desde_caja p{
+	font-size: 1em;
+	}
+	.estadia .estadia_desde .estadia_desde_caja .p_name{
+	font-size: 0.8em;
+	}
+}
+@media only screen and (max-width: 768px){
+	.container{max-width: 768px;}
+	.estadia{
+	height: 140px;
+	}
+	.estadia .estadia_desde .estadia_desde_caja{
+		height: 70px;
+	}
+	.estadia .estadia_desde .estadia_desde_caja p strong{
+		font-size: 0.8em;
+	}
+	.estadia .estadia_desde .estadia_desde_caja .p_name{
+	font-size: 0.7em;
+	}
+}
+
+
+@media only screen and (max-width: 425px){
+	.estadia{
+	padding: 0 15px;	
+	height: auto;
+	}
+
+	.estadia .estadia_desde .estadia_desde_caja{
+		margin-left: 0px !important; 
+		margin-bottom: 10px;
+		background-color: white;
+		height: 70px;
+	}
+
+}
